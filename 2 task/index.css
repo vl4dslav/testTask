@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--black, #0e1014);
+  color: var(--light-text, #e4e5ea);
+}
+
+.container {
+  padding: 4.6rem 15rem 0 15rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ball,
+.light {
+  position: absolute;
+}
+
+.purple-light {
+  left: 602px;
+  bottom: 875px;
+  width: 259px;
+  height: 259px;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833ab4;
+  filter: blur(196px);
+}
+
+.red-light {
+  top: 251px;
+  right: 1231px;
+  width: 311px;
+  height: 311px;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961a1a;
+  filter: blur(196px);
+}
+
+.purple-ball {
+  top: 2px;
+  left: 868px;
+}
+
+.red-ball {
+  top: 83px;
+  left: 519px;
+}
+
+.sm-red-ball {
+  top: 547px;
+  left: 851px;
+}
+
+header {
+  padding-top: 0.9rem;
+  display: flex;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.logo {
+  width: 14rem;
+}
+
+.logo-text {
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  margin-left: 5rem;
+  margin-right: 13.7rem;
+  display: flex;
+  gap: 3rem;
+  width: 50rem;
+}
+
+.icons {
+  margin-left: 5rem;
+  display: flex;
+  gap: 3rem;
+  width: 12rem;
+}
+
+main {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 36rem;
+  line-height: 1.22;
+}
+
+.main h1 {
+  font-weight: 400;
+  font-size: 4.8rem;
+}
+
+h1 span {
+  display: block;
+  font-weight: 900;
+}
+
+.gradient {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #ff3f78 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main p {
+  margin-top: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+article {
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+article h2 {
+  font-size: 1.8rem;
+  width: 29rem;
+  font-weight: 500;
+}
+
+article h2 .gradient {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+}
+
+.content-part {
+  width: 16rem;
+}
+
+.content-part h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.content-part p {
+  margin-top: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+article button {
+  background-color: #4077f3;
+  color: #e4e5ea;
+  margin-top: 6.1rem;
+  width: 26.2rem;
+  height: 6.1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  height: 31.5rem;
+  margin-top: 6.9rem;
+  padding-top: 5.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-part {
+  text-align: right;
+}
+
+.part h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray, #656566);
+  font-family: Inter;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.part ul {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.part ul.middle {
+  width: 41rem;
+  flex-direction: row;
+  gap: 5.2rem;
+}
+
+.part ul li {
+  padding-top: 1rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.contacts .icons {
+  margin: 0;
+}
+
+.copyright {
+  margin-top: 3.3rem;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.copyright .underline {
+  text-decoration: underline;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .full {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .container {
+    padding: 0;
+    width: 100vw;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .nav {
+    gap: 1.6rem;
+    margin: 0;
+    width: 100vw;
+    padding: 2rem 1.6rem;
+    height: 5.5rem;
+    background: var(--black, #0e1014);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  main {
+    background-image: url(./mobile-bg.png);
+    background-size: cover;
+    height: 44.5rem;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 4rem;
+  }
+
+  .main {
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    width: 29.2rem;
+    margin: 0 auto 4.5rem;
+  }
+
+  .main h1 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  .main p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  article {
+    align-items: start;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 29.2rem;
+    margin: 0 auto;
+  }
+
+  .mobile.mobile-content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.4rem;
+  }
+
+  .mobile-content-elem {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+  }
+
+  .line {
+    height: 1px;
+    width: 1rem;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    margin-right: 0.5rem;
+  }
+
+  footer {
+    height: 55.9rem;
+    padding: 4.4rem 0 0 1.6rem;
+    margin: 0 0 6rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .part {
+    margin-bottom: 3rem;
+  }
+
+  .part h4 {
+    width: 9.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 1rem;
+  }
+
+  .part ul {
+    font-size: 1.4rem;
+    width: 17.2rem;
+  }
+
+  .part ul.middle {
+    gap: 4.8rem;
+  }
+
+  ul.middle div:first-child {
+    max-width: 10rem;
+  }
+
+  ul.middle div:last-child {
+    max-width: 12.3rem;
+  }
+
+  .last-part {
+    text-align: left;
+  }
+
+  .contacts {
+    align-items: start;
+  }
+
+  .contacts li:last-child {
+    width: 24.3rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+    width: 23.9rem;
+    text-align: left;
+  }
+}
